@@ -1,0 +1,40 @@
+---
+title:      Thomson R&D
+slug:       thomson-rd
+created_at: 2007-10-03 10:00:00
+layout:     reference
+filter:
+  - haml
+more:       true
+---
+.header
+  %h2=h @page.title
+
+  .section
+    %h3 Description
+    %dl
+      %dt
+        %img{:src=>full_file_path('thomson.png'), :width=>"260", :height=>"152",:alt=>""}
+      %dd
+        Design, intégration et développement GUI pour Set-top box 
+
+.section
+  .technos
+    %h3 Technologies
+    %ul
+      %li flash/as2 player Bluestreak Machblue TV,
+      %li ruby
+      
+
+- content_for :more do
+  %h3 Intervention
+  
+  %ul
+    %li conception ergonomique
+    %li design UI, pictogrammes, fonds d'écrans et splashscreen
+    %li conception transitions animées
+    %li intégration flash
+    %li développements as2
+    %li scripts (Ruby / Rake) pour optmisation des ressources graphiques
+  
+  (production confidentielle)

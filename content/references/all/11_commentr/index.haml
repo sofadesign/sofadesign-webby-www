@@ -1,0 +1,49 @@
+---
+title:      comment-®
+slug:       commentr
+created_at: 2008-05-01 10:00:00
+layout:     reference
+filter:
+  - haml
+more:       true
+---
+.header
+  %h2
+    comment-®
+    %br
+    %small
+      (concept + direction artistique 
+      %a{:href=>"http://www.lavitrinedetrafik.fr/"} Trafik
+      )
+
+  .section
+    %h3 Description
+    %dl
+      %dt
+        %img{:src=>full_file_path('commentr.png'), :width=>"260", :height=>"152",:alt=>""}
+      %dd
+        Dévelopement module interactif flash et son back-office pour l'atelier
+        %a{:href=>"http://www.lavitrinedetrafik.fr/"} Trafik
+
+.section
+  .technos
+    %h3 Technologies
+    %ul
+      %li flash/as2, 
+      %li mtasc, 
+      %li PHP5, 
+      %li MySQL, 
+      %li JSON 
+    
+  %p.bt.www
+    %a{:href=>"http://www.laconfluenceonendiscute.fr/comment-r/index.html"} www    
+        
+- content_for :more do
+    
+  %h3 Intervention / développement
+  %ul
+    %li Développement PHP5/MySQL de l'application. Prototypage avec Ruby On Rails.
+    %li API JSON pour la communication avec Flash
+    %li Client flash: ActionScript 2 full object (syntaxe stricte MTASC), documenté et pleinement réutilisable
+    %li Développement et optimisation mouvements/physics
+  

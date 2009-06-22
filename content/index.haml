@@ -1,0 +1,71 @@
+---
+title:       Home
+author:      Fabrice Luraine
+filter:
+  - haml
+body_class:  home
+---
+%h1
+  Développement web,
+  %br
+  expertise et conseil
+  
+
+%ul#slideshow
+  %li
+    %img{:src=>timestamped_url("/img/home/slide_01.jpg"), :width=>360, :height=>170, :alt=>""}
+  %li
+    %img{:src=>timestamped_url("/img/home/slide_02.jpg"), :width=>360, :height=>170, :alt=>""}
+  %li
+    %img{:src=>timestamped_url("/img/home/slide_03.png"), :width=>360, :height=>170, :alt=>""}
+  %li
+    %img{:src=>timestamped_url("/img/home/slide_04.png"), :width=>360, :height=>170, :alt=>""}
+  %li         
+    %img{:src=>timestamped_url("/img/home/slide_05.jpg"), :width=>360, :height=>170, :alt=>""}
+  %li        
+    %img{:src=>timestamped_url("/img/home/slide_06.png"), :width=>360, :height=>170, :alt=>""}
+  %li        
+    %img{:src=>timestamped_url("/img/home/slide_07.png"), :width=>360, :height=>170, :alt=>""}
+  %li       
+    %img{:src=>timestamped_url("/img/home/slide_08.png"), :width=>360, :height=>170, :alt=>""}
+  %li       
+    %img{:src=>timestamped_url("/img/home/slide_09.png"), :width=>360, :height=>170, :alt=>""}
+    
+#tumblr.widget
+  %h2 Tumblog
+  #tumblr-posts.dated.content
+  %p.bt.plus
+    %a{:href=>'http://sofadesign.tumblr.com'} +
+
+#last-projects.widget
+  %h2 Derniers projets
+  .content
+    %ul
+      %li.odd 
+        &gt;
+        %a{:href=>'./references/all/15_crepa-bretagne/'} CREPA Bretagne
+      %li.even 
+        &gt;
+        %a{:href=>'./references/#article_00_archivideo'} Archividéo
+        \: Développements AS2 pour module de navigation photographique communiquant avec l’API Mappy
+  %p.bt.plus
+    %a{:href=>'./references/'} +
+
+- content_for :aside do
+  #intro.section
+    %p
+      Vous recherchez des solutions technologiques  
+      innovantes, une prestation de développement de qualité&nbsp;?
+    %p
+      Vous avez besoin de quelques conseils, d’un audit  
+      approfondi ou d’une formation spéciﬁque&nbsp;?
+    %p
+      Découvrez les différents 
+      %a{:href=>'./services/'}services 
+      Sofa design, 
+      %br
+      nos 
+      %a{:href=>'./references/'}références
+      , et n'hésitez pas à 
+      %a{:href=>'./contact/'} me contacter
+      \.

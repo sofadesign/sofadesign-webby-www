@@ -1,0 +1,17 @@
+---
+layout: default
+filter:
+  - haml
+---
+%h1 Références
+
+.nav
+  %p.bt.back
+    = link_to_page '< retour', :title => "Références"
+
+#references.article
+  = @content
+
+  - if content_for? :more
+    .section.more.clear 
+      = content_for :more

@@ -1,0 +1,54 @@
+---
+title:      Total (pour l'agence Cadmium)
+slug:       total-lms
+created_at: 2008-10-01 10:00:00
+layout:     reference
+filter:
+  - haml
+more:       true
+---
+.header
+  %h2
+    Total
+    %br
+    %small
+      (pour l'agence 
+      %a{:href=>"http://www.cadmium.fr/"} Cadmium
+      )
+
+  .section
+    %h3 Description
+    %dl
+      %dt
+        %img{:src=>full_file_path('total-lms.jpg'), :width=>"260", :height=>"152",:alt=>""}
+      %dd
+        Développements ActionScript 2 pour adaptation cédérom de formation 
+        Flash sur plateforme LMS (
+        %a{:href=>"http://www.aicc.org/"} AICC
+        )
+
+.section
+  .technos
+    %h3 Technologies
+    %ul
+      %li flash / as2,
+      %li ruby,
+      %li sprouts,
+      %li mtasc,
+      %li swfmill
+
+      
+
+- content_for :more do
+  %h3 Intervention / développement ActionScript 2
+  
+  %ul
+    %li Analyse et conception technique
+    %li Dévelopement API AS2 pour communication avec le LMS (HTTP AICC CMI Protocol)
+    %li Développement moteur spécifique pour exploitation des leçons précédemment produites pour le cédérom, tout en conservant la compatibilité avec le support initial
+    %li 
+      Tests unitaires via framework
+      %a{:href=>"http://asunit.org/"} ASUnit
+    %li Scripts ruby et tâches rake pour automatisation de la compilation et la création des différents fichiers AICC
+    
+    

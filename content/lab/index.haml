@@ -1,0 +1,76 @@
+---
+title:      Index
+created_at: 2009-05-13 18:02:46.122813 +02:00
+filter:
+  - haml
+
+---
+%h1 lab
+
+#limonade.section
+  %h2 
+    Limonade,  
+    %small PHP micro-framework
+  %p.figure.h8.w130.left
+    %img{:src=>timestamped_url("/img/thumb_limonade_logo.png"), :width=>130, :height=>136, :alt=>"Logo Limoande"}
+
+  .left-margin150
+    %p
+      Limonade est un micro framework PHP qui permet le prototypage et le
+      développement rapide d'applications web.
+
+    %p
+      Prenant son inspiration de frameworks tels que 
+      %a{:href=>"http://www.sinatrarb.com/"}Sinatra 
+      ou 
+      %a{:href=>"http://github.com/why/camping/tree/master"}Camping 
+      en Ruby,
+      ou encore 
+      %a{:href=>"http://orbit.luaforge.net/"}Orbit 
+      en Lua, il est simple, léger et d'un usage extrêmement
+      souple.
+
+  - uv(:lang => "php", :line_numbers => false) do
+    :plain
+      <?php
+        require_once 'lib/limonade.php'
+        dispatch('/', 'hello');
+            function hello()
+            {
+                return 'Hello world!';
+            }
+        run();
+      ?>
+
+  %p.bt.en-savoir-plus
+    %a{:href=>'http://sofa-design.net/limonade/'} en savoir +
+
+#extensions-radiantcms
+  %h2 Extensions radiantCMS
+  
+  %p
+    J'ai développé et modifié plusieurs extensions au fil de mes différentes 
+    productions sur RadiantCMS.
+    %br
+    Certaines sont à présent disponibles sur le 
+    %a{:href=>'http://github.com/sofadesign/'} github Sofa Design
+
+  %p.bt.en-savoir-plus
+    %a{:href=>'http://github.com/sofadesign/'} en savoir +
+
+#cumulards
+  %h2 Cumulards
+  
+  %p
+    Un ensemble de scripts en Ruby pour l'analyse et la diffusion de
+    statistiques concernant le cumul des mandats des députés et sénateurs français.
+    %br
+    Ces outils assurent notamment l'extraction d'informations depuis le site du sénat
+    et de l'assemblée nationale
+  
+  %p.bt.en-savoir-plus
+    %a{:href=>'http://code.google.com/p/non-cumul/'} en savoir +
+    
+    
+/ #asciitunes
+/   %h2 Asciitunes

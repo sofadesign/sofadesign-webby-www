@@ -1,0 +1,36 @@
+---
+title:      Orange
+slug:       orange-mobile
+created_at: 2007-10-02 10:00:00
+layout:     reference
+filter:
+  - haml
+more:       true
+---
+.header
+  %h2= @page.title
+
+  .section
+    %h3 Description
+    %dl
+      %dt
+        %img{:src=>full_file_path('orange.png'), :width=>"260", :height=>"152",:alt=>""}
+      %dd
+        UI pour application prototype sur mobile
+
+.section
+  .technos
+    %h3 Technologies
+    %ul
+      %li flash sur player Bluestreak Machblue Mobile
+
+- content_for :more do
+  %h3 Intervention
+  
+  %ul
+    %li conseil
+    %li design pictogrammes
+    %li transitions animées
+    %li optimisation des rendus vectoriels flash
+  
+  (production confidentielle)

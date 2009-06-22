@@ -1,0 +1,47 @@
+---
+title:      Agence Cadmium
+slug:       agence-cadmium
+created_at: 2007-02-03 10:00:00
+layout:     reference
+filter:
+  - haml
+more:       true
+---
+.header
+  %h2= @page.title
+
+  .section
+    %h3 Description
+    %dl
+      %dt
+        %img{:src=>full_file_path('cadmium.jpg'), :width=>"260", :height=>"152",:alt=>""}
+      %dd
+        Développement et expertise pour l'agence 
+        %a{:href=>"http://www.cadmium.fr/"} Cadmium
+
+.section
+  .technos
+    %h3 Technologies
+    %ul
+      %li flash / actionscript,
+      %li xhtml, 
+      %li css, 
+      %li PHP,
+      %li MySQL,
+      %li ...
+  
+
+- content_for :more do
+  %p
+    Développement et expertise régulière pour l'agence Cadmium dans le cadre de
+    projets web et tout particulièrement pour une interactivité Flash avancée
+
+  %ul
+    %li POO
+    %li haute réutilisabilité du code
+    %li MVC, complète séparation logique applicative / mise en forme
+    %li communication client/serveur en XML
+    %li SEO
+    %li ...
+    
+  

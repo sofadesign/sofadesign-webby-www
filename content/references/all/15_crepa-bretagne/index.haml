@@ -1,0 +1,54 @@
+---
+title:      CREPA Bretagne
+slug:       crepa-bretagne
+created_at: 2009-02-01 10:00:00
+layout:     reference
+filter:
+  - haml
+more:       true
+---
+.header
+  %h2=h @page.title
+
+  .section
+    %h3 Description
+    %dl
+      %dt
+        %img{:src=>full_file_path('crepa.png'), :width=>"260", :height=>"152",:alt=>""}
+      %dd
+        Design et développement du site internet
+
+.section
+  .technos
+    %h3 Technologies
+    %ul
+      %li 
+        %a{:href=>"http://rubyonrails.org/"} Ruby On Rails, 
+      %li 
+        %a{:href=>"http://radiantcms.org/"} Radiant CMS, 
+      %li 
+        %a{:href=>"http://jquery.com/"} jQuery,
+      %li HTML, 
+      %li CSS
+
+  %p.bt.www
+    %a{:href=>"http://www.crepa-formation.org/"} www    
+      
+
+- content_for :more do
+  %h3 Axes de recherches
+  
+  %ul
+    %li recherches graphiques sur les notions de formation et d'architecture
+    %li croisement de ces deux domaines
+    %li travail autour du principe de papier plié comme suggestion de plans, dimensions, circulations.
+    %li ton professionnel et avenant
+
+  %p
+    Mise en place d'un module d'administration intuitif et souple pour une mise
+    à jour aisée.
+    
+  %p
+    Développement d'
+    %a{:href=>"http://github.com/sofadesign/"} extensions 
+    spécifiques pour Radiant CMS

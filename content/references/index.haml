@@ -1,0 +1,41 @@
+---
+title:      Références
+slug:       references
+created_at: 2009-03-19 10:31:14.981253 +01:00
+filter:
+  - haml
+---
+
+%h1 Références
+#references
+  - references = @pages.find( :all, :layout => 'reference', :sort_by => :created_at, :reverse => true )
+  - references.each do |reference|
+    - n ||= 0
+    .article.reference{:id=>"article_#{sprintf('%02d', n)}_#{reference.slug || reference.mtime.strftime('%Y%m%d%H%M')}"}
+      = render(reference)
+      - if reference.more
+        %p.bt.en-savoir-plus
+          %a{:href=>url_for(reference)} en savoir +
+    - n += 1
+          
+- content_for :aside do
+  #clients.section
+    %h1 Clients
+    .section
+      %p Je m'adresse:
+      %ul
+        %li aux professionnels des technologies multimédia et high-tech (R&amp;D, entreprises innovantes...) et aux SSII
+        %li aux professionnels de la communication: agences, web agencies, graphistes
+        %li aux PME/PMI
+        %li aux collectivités, institutions publiques et privées
+
+    .section
+      %p Quelques clients…
+      %ul.clients
+        %li Thomson R&amp;D
+        %li Orange R&amp;D
+        %li Total
+        %li Euro RSCG
+        %li Cadmium
+        %li Les Archives de la critique d'art
+        %li ...

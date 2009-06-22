@@ -1,0 +1,45 @@
+---
+title:      Philippe Hurteau
+slug:       philippe-hurteau
+created_at: 2006-06-01 10:00:00
+layout:     reference
+filter:
+  - haml
+more:       true
+---
+.header
+  %h2= @page.title
+
+  .section
+    %h3 Description
+    %dl
+      %dt
+        %img{:src=>full_file_path('philippe-hurteau.png'), :width=>"260", :height=>"152",:alt=>""}
+      %dd
+        Site du peintre Philippe Hurteau: conception, développement et intégration
+
+.section
+  .technos
+    %h3 Technologies
+    %ul
+      %li flash / as2,
+      %li xhtml, 
+      %li css, 
+      %li PHP, 
+      %li MySQL
+  
+  %p.bt.www
+    %a{:href=>"http://www.hurteau.org/"} www
+
+- content_for :more do
+  %p 
+    Au delà d’un travail de webdesign et des besoins en terme de diffusion sur
+    Internet de l’artiste Philippe Hurteau, ce site est avant tout le fruit d’une
+    collaboration et d’une réflexion commune sur l’image contemporaine.
+    
+  %p
+    Philippe Hurteau travail sa peinture essentiellement à partir d’
+    "images-écrans" (images télévisées, web cams...); rendre compte en ligne de
+    ses oeuvres induit une mise en abîme qui nous a interrogés tout au long de
+    la production de ce site Internet.
+  

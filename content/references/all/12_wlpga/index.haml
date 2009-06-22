@@ -1,0 +1,61 @@
+---
+title:      World LP Gas Association (pour Les Anges Urbains)
+slug:       wlpga
+created_at: 2008-07-31 10:00:00
+layout:     reference
+filter:
+  - haml
+more:       true
+---
+.header
+  %h2
+    World LP Gas Association
+    %br
+    %small
+      (pour les
+      %a{:href=>"http://lesangesurbains.com/"} Les Anges Urbains
+      )
+
+  .section
+    %h3 Description
+    %dl
+      %dt
+        %img{:src=>full_file_path('wlpga.png'), :width=>"260", :height=>"152",:alt=>""}
+      %dd
+        Dévelopement et intégration du site World LP Gas Association
+
+.section
+  .technos
+    %h3 Technologies
+    %ul
+      %li Ruby On Rails,
+      %li Radiant CMS,
+      %li XHTML,
+      %li CSS,
+      %li Mootools
+
+  %p.bt.www
+    %a{:href=>"http://worldlpgas.com/"} www    
+      
+
+- content_for :more do
+  %h3 Intervention / développement
+  
+  %p
+    Adaptation et développements de différents modules spécifiques sur la base
+    du CMS Rails Radiant CMS
+  
+  %ul
+    %li Intégration de FCKEditor au CMS
+    %li Système de widgets réutilisables
+    %li Espace membre / annuaire des membres
+    %li Newsletter
+    %li ...
+  
+  %p Intégration XHTML/CSS/JS
+
+  %ul
+    %li optimisée pour le référencement naturel
+    %li bibliothèque JS mootools implémentée de manière non obstrusive
+    
+  %p Expertise technique et conseil

@@ -1,0 +1,48 @@
+---
+title:      Art Contemporain en Bretagne
+slug:       artcontemporainbretagne
+created_at: 2005-12-01 10:00:00
+layout:     reference
+filter:
+  - haml
+more:       true
+---
+.header
+  %h2= @page.title
+
+  .section
+    %h3 Description
+    %dl
+      %dt
+        %img{:src=>full_file_path('acb.png'), :width=>"260", :height=>"152",:alt=>""}
+      %dd
+        Portail culturel de la région Bretagne
+
+.section
+  .technos
+    %h3 Technologies
+    %ul
+      %li xhtml, 
+      %li css, 
+      %li PHP, 
+      %li MySQL, 
+      %li
+        %a{:href=>"http://cakephp.org/"} CakePHP 
+    
+  %p.bt.www
+    %a{:href=>"http://www.artcontemporainbretagne.org/"} www
+    
+- content_for :more do
+  %h3 Intervention
+  %p ergonomie / développement original / déclinaison graphique pour l’affichage des contenus
+  %p
+    (artwork et typographie: 
+    %a{:href=>"http://www.lieuxcommuns.com/"}Jocelyn Cottencin / Lieuxcommuns
+    )
+    
+  %h3 Axes de recherche
+  %ul
+    %li Offrir au public un outil d’information complet et simple d’utilisation
+    %li Témoigner du flux d’informations et d’actions animant le réseau
+    %li Donner au portail une singularité dans son concept ergonomique et dans son approche graphique
+    %li Permettre une actualisation autonome du site par la mise en place d’un module d’administration.

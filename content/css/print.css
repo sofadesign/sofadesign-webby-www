@@ -1,0 +1,28 @@
+---
+extension: css
+layout:    nil
+filter:
+  - erb
+  - minifycss
+---
+@import url(<%=timestamped_url('/css/screen.css')%>);
+
+#nav, p.bt {display:none;}
+html, body, #header, #content, #main, #aside,
+#header .desc, #main h1,
+#main .section, #main .article,
+#footer {
+   background:none;background-color:#fff;
+   overflow: visible;
+   }
+#main h1 {
+   color: #333;
+}
+#main .section, #main .article {
+   padding-left:0;
+   left:0;
+}
+#footer {
+   clear:both;
+   width: 100%;
+}

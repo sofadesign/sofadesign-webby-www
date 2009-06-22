@@ -1,0 +1,31 @@
+/* IE lte 7 */
+
+#nav-about li {
+   display:inline;
+   }
+#nav-categories a:hover {
+	color:  #000;
+	}
+	
+#references .header dt {
+	margin-top: 0em;
+	}
+	#references .technos {
+		height: 6em;
+		}
+		
+#main .post pre {
+   overflow: visible;
+   overflow-x: auto;
+   overflow-y: visible;
+	padding: 1.5em 0.75em;
+	}
+	
+	body.home #main .widget li {
+		padding-left: 3ex;
+		text-indent: -5ex;
+		}
+   body.home #main .widget .dated li {
+		padding-left: 8ex;
+		text-indent: -10ex;
+		}

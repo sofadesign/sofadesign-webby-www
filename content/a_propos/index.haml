@@ -1,0 +1,58 @@
+---
+title:      A propos
+slug:       a_propos
+created_at: 2009-03-20 16:33:21.277899 +01:00
+filter:
+  - haml
+---
+%h1 À propos
+
+#a-propos.section
+  .header
+    %p
+      %img{:src=>timestamped_url('/img/a_propos.jpg'), :width=>260, :height=>206,:alt=>""}
+    %dl
+      %dt Identité
+      %dd Fabrice Luraine
+      
+      %dt Spécialité
+      %dd Développeur web
+      
+      %dt Expérience
+      %dd Freelance depuis 2000 
+      
+      %dt Implantation
+      %dd Rennes (35)
+  .section
+    %h2 En bref…
+    %p
+      Développeur freelance depuis 2000, j'ai fait mes armes sur director, flash
+      et php/mysql, essentiellement dans le domaine culturel.
+      %br
+      Tout en continuant à enrichir mes compétences autour des technos et des
+      usages du web, j'ai investi des domaines différents, notamment sur des
+      projet de R&amp;D.
+      %br
+      Je pratique Ruby et Rails avec enthousiasme depuis 2007 et continue à
+      explorer d'autres horizons: Processing, Flash sur mobile, Objective-C...
+        
+  
+- content_for :aside do
+  #partenaires.section
+    %h1 Partenaires
+    %p 
+      Besoin de renforts et de compétences complémentaires pour votre projet?
+      Je m'inscris dans un réseau de prestataires de confiance avec lesquels je
+      travaille régulièrement.
+      
+    .section
+      %p Notamment:
+      %ul
+        %li 
+          %a{:href => "http://www.vincent-helye.com/"} Vincent Hélye
+        %li 
+          %a{:href => "http://www.minimau.com/"} MiniMau
+        %li 
+          %a{:href => "http://www.puzzle-rennes.fr/"} Atelier Puzzle
+        %li 
+          %a{:href => "http://www.organicweb.fr/"} Organic Web

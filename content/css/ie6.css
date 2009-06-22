@@ -1,0 +1,43 @@
+body {
+   padding-bottom: -10px;
+}
+#content{
+	left: -60px;
+	width: 790px;
+	margin-right: -90px;
+	}
+	#main{
+		width: 410px;
+		overflow:hidden;
+		}
+#footer {
+  border-bottom: 36px solid #4D4D4D;
+  margin-bottom:0;
+}
+
+body.home #content  {
+	width: 730px;
+	overflow: visible;
+	height: 500px;
+	}
+      
+#nav-categories li {
+   display:inline;
+}
+
+#main .UltraViolet {
+	margin-bottom: 1.5em;
+	background-color: #000;
+	overflow: auto;
+	padding: 0.75em;
+	}
+	
+#main .post {
+	position: relative;
+	left: -80px;
+	}
+	#main .post .section {
+   	position: relative;
+   	left: 90px;
+   	top: -48px;
+   	}

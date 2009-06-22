@@ -1,0 +1,49 @@
+---
+title:      Archives de la critique d'art
+slug:       archives-de-la-critique-d-art
+created_at: 2007-09-03 10:00:00
+layout:     reference
+filter:
+  - haml
+more:       true
+---
+.header
+  %h2= @page.title
+
+  .section
+    %h3 Description
+    %dl
+      %dt
+        %img{:src=>full_file_path('aca.png'), :width=>"260", :height=>"152",:alt=>""}
+      %dd
+        Design, développement et maintenance du site internet.
+
+.section
+  .technos
+    %h3 Technologies
+    %ul
+      %li xhtml, 
+      %li css, 
+      %li
+        %a{:href=>"http://rubyonrails.org"}Ruby On Rails
+        ,
+      %li MySQL,
+      %li Flex
+  
+  %p.bt.www
+    %a{:href=>"http://www.archivesdelacritiquedart.org/"} www  
+
+- content_for :more do
+  %p
+    Après une première collaboration en 2002, les Archives de la critique d'art
+    font à nouveau appel à Sofa Design pour la refonte de leur site.
+
+  %ul
+    %li Mise en place d'un nouveau socle technique pour de meilleurs performances, une pérennité et une évolutivité assurée: Ruby On Rails
+    %li Importation et restructuration des bases de données existantes
+    %li Mise en place d'un outil de gestion de contenus intuitif et évolué.
+    %li Optimisation pour l'accessibilité et respect des standards
+    %li Mise en place de nouveaux contenus
+    %li Attractivité et mise en valeur des contenus
+    
+  

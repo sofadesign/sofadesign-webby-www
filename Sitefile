@@ -1,0 +1,12 @@
+
+task :default => :build
+
+desc 'deploy the site to the webserver'
+task :deploy => [:build, 'deploy:rsync']
+
+SITE.tidy_options = '-indent -wrap 120 --wrap-attributes no --wrap-php no -utf8 --numeric-entities true --output-html true --tidy-mark no'
+SITE.haml_options = {:format => :html4}
+SITE.uv_theme = 'sunburst'
+
+require 'deploy.conf.rb'
+# EOF
